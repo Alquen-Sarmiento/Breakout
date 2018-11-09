@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Canvas Sample 1</title>
+        <script>
+            window.onload = function(){
+                var canvas = document.getElementById("canvas");
+                var ctx = canvas.getContext("2d")
+                var x = 0;
+                setInterval(function(){
+                    ctx.fillRect(x,0,50,50);
+                    x += 5;
+                },10)
+            }
+        </script>
+    </head>
+    <body>
+        <canvas id="canvas" width="300" height="300"></canvas>
+    </body>
+</html>
